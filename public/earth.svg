@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500">
+  <defs>
+    <radialGradient id="ocean" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0c4a6e;stop-opacity:1" />
+    </radialGradient>
+    <pattern id="land" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
+      <path d="M0,100 Q50,50 100,100 T200,100" fill="#166534" stroke="#15803d" stroke-width="2"/>
+      <path d="M0,150 Q50,100 100,150 T200,150" fill="#15803d" stroke="#166534" stroke-width="2"/>
+      <path d="M0,50 Q50,0 100,50 T200,50" fill="#166534" stroke="#15803d" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="1000" height="500" fill="url(#ocean)"/>
+  <!-- 大陆 -->
+  <path d="M100,250 Q200,150 300,200 T500,250" fill="url(#land)" stroke="#14532d" stroke-width="3"/>
+  <path d="M600,200 Q700,100 800,150 T900,200" fill="url(#land)" stroke="#14532d" stroke-width="3"/>
+  <path d="M200,300 Q300,350 400,300 T600,300" fill="url(#land)" stroke="#14532d" stroke-width="3"/>
+  <path d="M700,300 Q800,350 900,300" fill="url(#land)" stroke="#14532d" stroke-width="3"/>
+  <!-- 极地 -->
+  <circle cx="500" cy="100" r="50" fill="#f0f9ff" opacity="0.8"/>
+  <circle cx="500" cy="400" r="50" fill="#f0f9ff" opacity="0.8"/>
+</svg>
